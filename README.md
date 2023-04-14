@@ -1,2 +1,2 @@
 # CodeClause
-I've added the projects finished for the CodeClause virtual internship.
+Here I've added the projects finished for the CodeClause virtual internship.
