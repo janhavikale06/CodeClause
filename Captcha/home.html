@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Contact Form</title>
+
+    <!--for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!--for Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--for Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+
+    <!--for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form  method="post">
+            <h2 class="first-txt">Just say Hello</h2>
+            <p class="sec-txt">Let us know more about you!</p>
+            <div class="row">
+                <div class="input-grp"> 
+                    <input type="text" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="input-grp">
+                    <input type="text" id="lname" placeholder="Last Name" required>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <div class="input-grp">
+                    <a href="mailto:janhavikale06@gmail.com"></a>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-grp">
+                    <input type="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+
+            </div>
+
+            <textarea id="message" rows="3" placeholder="Write Something"></textarea>
+            
+            <div class="captcha">
+                <div class="wrapper">
+                    <canvas id="canvas" width="200" height="50"></canvas>
+                    <button id="reload-button">
+                      <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                  </div>
+                  <input type="text" id="user-input" placeholder="Enter the captcha"
+                  />
+                  <button id="submit-button" type="submit" onclick="return validate();">Send</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
